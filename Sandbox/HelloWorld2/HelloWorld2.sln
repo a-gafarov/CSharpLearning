@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld2", "HelloWorld2.csproj", "{D153F286-446E-4061-999A-A5A5A1056E27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "..\HelloWorld\HelloWorld.csproj", "{D5A25126-31CF-D4C9-4436-F138A47608BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vars", "..\Vars\Vars.csproj", "{7DB14D1D-AD0D-4EA7-B445-9327612B9E04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D153F286-446E-4061-999A-A5A5A1056E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D153F286-446E-4061-999A-A5A5A1056E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D153F286-446E-4061-999A-A5A5A1056E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D153F286-446E-4061-999A-A5A5A1056E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5A25126-31CF-D4C9-4436-F138A47608BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A25126-31CF-D4C9-4436-F138A47608BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A25126-31CF-D4C9-4436-F138A47608BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A25126-31CF-D4C9-4436-F138A47608BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB14D1D-AD0D-4EA7-B445-9327612B9E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB14D1D-AD0D-4EA7-B445-9327612B9E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB14D1D-AD0D-4EA7-B445-9327612B9E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB14D1D-AD0D-4EA7-B445-9327612B9E04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7CE25FA-4FBD-4808-A887-33E6BC842936}
+	EndGlobalSection
+EndGlobal
