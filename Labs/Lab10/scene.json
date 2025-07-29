@@ -1,0 +1,4 @@
+Point|{"X":1,"Y":1,"Color":"red"}
+Circle|{"X":2,"Y":2,"Radius":3,"Color":"blue"}
+Point|{"X":2,"Y":1,"Color":"white"}
+Point|{"X":1,"Y":3,"Color":"yellow"}
