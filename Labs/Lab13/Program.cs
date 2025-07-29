@@ -21,10 +21,10 @@ namespace Lab13
 			Circle c = new("blue", 2, 2, 3);
 			c.Draw();
 
-			c.OnRadiusChanged += (sender, args) => {
-				Console.WriteLine("RadiusChanged triggered");
+			c.OnRadiusChanged += (sender, args) =>
+			{
+				Console.WriteLine($"Radius changed from {args.OldRadius} to {args.NewRadius}");
 				c.Draw();
-				//var x = args[0];
 			};
 
 			c.Scale(2);

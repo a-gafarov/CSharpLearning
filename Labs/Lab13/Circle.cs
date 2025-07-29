@@ -1,6 +1,13 @@
 ﻿namespace Lab13
 {
-	public delegate void MyEvents(object sender, EventArgs args);
+	public delegate void MyEvents(object sender, MyEventArgs args);
+
+	public class MyEventArgs : EventArgs
+	{
+		public int OldRadius { get; set; }
+		public int NewRadius { get; set; }
+	}
+
 	internal class Circle(string color, int x, int y, int radius) : Shape(color)
 	{
 		public event MyEvents? OnRadiusChanged;
@@ -15,12 +22,14 @@
 				return radius;
 			}
 			set
-			{
-				var args = new EventArgs();
-				
-				OnRadiusChanged?.Invoke(this, args);
+			{				
+				var args = new MyEventArgs();
+				args.NewRadius = value;
+				args.OldRadius = radius;
 
 				radius = value;
+				
+				OnRadiusChanged?.Invoke(this, args);
 			}
 		}
 
@@ -38,8 +47,8 @@
 
 		public void Scale(double factor)
 		{
-			Radius = (int)Math.Round(Radius * factor);
 			Console.WriteLine($"Меняем радиус в {factor} раза");
+			Radius = (int)Math.Round(Radius * factor);
 		}
 
 	}
